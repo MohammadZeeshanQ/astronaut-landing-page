@@ -82,6 +82,10 @@ export default function LandingPage() {
                         <Typography className={classes.header} variant='h2'>
                             Experience using tokens in different ways
                         </Typography>
+
+                        <Typography className={classes.description} variant='body1'>
+                            Eliminate excessive worry about your transactions, can be more comfortable transacting using Tocktoken
+                        </Typography>
                     </Grid>
 
                 </Grid>
