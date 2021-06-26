@@ -2,10 +2,12 @@ import React from 'react'
 import { makeStyles } from '@material-ui/styles';
 import { Grid, Typography, Button } from '@material-ui/core';
 
+import AstroImage from '../../assets/images/props1.png';
+
 
 const useStyles = makeStyles({
     root: {
-
+        paddingTop: '8rem',
     },
 
     wrapper: {
@@ -21,19 +23,25 @@ const useStyles = makeStyles({
     },
 
     image: {
-
+        position: 'relative',
+        top: '-18rem',
+        width: '90%',
+        height: '100%',
+        objectFit: 'cover',
     },
 
     textContainer: {
-
+        padding: '0 2rem',
     },
 
     header: {
-
+        fontFamily: 'gothic-bold',
+        color: '#673376',
     },
 
     description: {
-
+        margin: '2.5rem 0',
+        fontFamily: 'gothic-regular',
     },
 
     buttonContainer: {
@@ -41,11 +49,19 @@ const useStyles = makeStyles({
     },
 
     buyButton: {
-
+        fontFamily: 'gothic-semi',
+        backgroundColor: '#6617cb',
+        backgroundImage: 'linear-gradient(315deg, #6617cb 0%, #cb218e 74%)',
+        color: '#fcfcfc',
+        textTransform: 'none',
     },
 
     learnButton: {
-
+        color: '#8D579C',
+        fontFamily: 'gothic-semi',
+        border: 'none',
+        textTransform: 'none',
+        margin: '0 1.5rem'
     },
 });
 
@@ -66,18 +82,19 @@ export default function LandingPage() {
                     <Grid
                         item
                         className={classes.imageContainer}
-                        xs={6}
+                        xs={12}
                         sm={6}
                         md={6}
                     >
-                        <img src='' className={classes.image} alt='Astronaut' />
+                        <img src={AstroImage} className={classes.image} alt='Astronaut' />
                     </Grid>
 
                     <Grid
                         item
-                        xs={6}
+                        xs={12}
                         sm={6}
                         md={6}
+                        className={classes.textContainer}
                     >
                         <Typography className={classes.header} variant='h2'>
                             Experience using tokens in different ways
@@ -86,6 +103,15 @@ export default function LandingPage() {
                         <Typography className={classes.description} variant='body1'>
                             Eliminate excessive worry about your transactions, can be more comfortable transacting using Tocktoken
                         </Typography>
+
+                        <div className={classes.buttonContainer}>
+                            <Button className={classes.buyButton} href='/' variant='contained'>
+                                Buy Now
+                            </Button>
+                            <Button className={classes.learnButton} href='/' variant='outlined'>
+                                Learn More
+                            </Button>
+                        </div>
                     </Grid>
 
                 </Grid>

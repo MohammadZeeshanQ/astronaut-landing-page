@@ -26,6 +26,7 @@ const useStyles = makeStyles({
     },
 
     logo: {
+        color: '#fcfcfc',
         fontFamily: 'gothic-bold',
     },
 
