@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: gothic-light;
+  src: url(./assets/fonts/GothicA1-Light.ttf);
+}
+
+@font-face {
+  font-family: gothic-regular;
+  src: url(./assets/fonts/GothicA1-Regular.ttf);
+}
+
+@font-face {
+  font-family: gothic-semi;
+  src: url(./assets/fonts/GothicA1-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: gothic-bold;
+  src: url(./assets/fonts/GothicA1-Bold.ttf);
+}
