@@ -7,7 +7,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles({
     root: {
-
+        backgroundColor: '#FCFCFC',
     },
 
     wrapper: {
@@ -26,8 +26,9 @@ const useStyles = makeStyles({
     },
 
     logo: {
-        color: '#fcfcfc',
+        color: '#491257',
         fontFamily: 'gothic-bold',
+        letterSpacing: '1px',
     },
 
     desktopTabContainer: {
@@ -38,10 +39,10 @@ const useStyles = makeStyles({
     },
 
     tab: {
-        fontFamily: 'gothic-bold',
+        fontFamily: 'gothic-semi',
         border: 'none',
         margin: '0 .5rem',
-        color: '#8D579C',
+        color: '#491257',
         textTransform: 'none',
         letterSpacing: '2px',
     },
@@ -90,8 +91,8 @@ export default function NavBar() {
 
 
     return (
-        <div className={classes.root}>
-            <AppBar color='transparent' elevation={0} >
+        <div>
+            <AppBar elevation={0} className={classes.root}>
                 <Toolbar className={classes.wrapper}>
 
                     <div className={classes.logoContainer}>

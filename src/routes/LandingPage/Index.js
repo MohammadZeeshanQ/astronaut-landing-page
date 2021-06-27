@@ -1,5 +1,6 @@
 import React from 'react'
 import LandingPage from './LandingPage';
+import SideBySide from './SideBySide.js';
 import { makeStyles } from '@material-ui/styles';
 
 // '@media(max-width: 600px)': {
@@ -28,6 +29,7 @@ export default function Index() {
     return (
         <div className={classes.root}>
             <LandingPage />
+            <SideBySide />
         </div>
     )
 }

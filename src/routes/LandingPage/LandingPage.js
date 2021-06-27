@@ -23,15 +23,14 @@ const useStyles = makeStyles({
     },
 
     image: {
-        position: 'relative',
-        top: '-18rem',
-        width: '90%',
+
+        width: '100%',
         height: '100%',
         objectFit: 'cover',
     },
 
     textContainer: {
-        padding: '0 2rem',
+        padding: '0 1rem',
     },
 
     header: {
@@ -41,6 +40,7 @@ const useStyles = makeStyles({
 
     description: {
         margin: '2.5rem 0',
+        color: '#808080',
         fontFamily: 'gothic-regular',
     },
 
