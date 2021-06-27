@@ -1,5 +1,6 @@
 import React from 'react'
 import LandingPage from './LandingPage';
+import Feature from './Features.js';
 import SideBySide from './SideBySide.js';
 import { makeStyles } from '@material-ui/styles';
 
@@ -29,6 +30,7 @@ export default function Index() {
     return (
         <div className={classes.root}>
             <LandingPage />
+            <Feature />
             <SideBySide />
         </div>
     )
