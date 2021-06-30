@@ -27,6 +27,8 @@ const useStyles = makeStyles({
 export default function Index() {
     const classes = useStyles();
 
+    console.log('v-1.0');
+
     return (
         <div className={classes.root}>
             <LandingPage />
