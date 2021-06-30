@@ -26,8 +26,8 @@ const useStyles = makeStyles({
     },
 
     logo: {
-        color: '#491257',
-        fontFamily: 'gothic-bold',
+        color: '#673376',
+        fontFamily: 'source-bold',
         letterSpacing: '1px',
     },
 
@@ -39,10 +39,10 @@ const useStyles = makeStyles({
     },
 
     tab: {
-        fontFamily: 'gothic-semi',
+        fontFamily: 'source-semi',
         border: 'none',
         margin: '0 .5rem',
-        color: '#491257',
+        color: '#673376',
         textTransform: 'none',
         letterSpacing: '2px',
     },
@@ -56,7 +56,7 @@ const useStyles = makeStyles({
     },
 
     mobileTab: {
-        fontFamily: 'gothic-bold',
+        fontFamily: 'source-bold',
         width: '100%',
         justifyContent: 'start',
         border: 'none',

@@ -7,7 +7,15 @@ import AstroImage from '../../assets/images/props1.png';
 
 const useStyles = makeStyles({
     root: {
-        paddingTop: '8rem',
+        padding: '8rem 0 5rem 0',
+
+        '@media(max-width: 600px)': {
+            padding: '5rem 0 3rem 0',
+        },
+
+        '@media(min-width: 600px) and (max-width: 900px)': {
+            padding: '7rem 0 3rem 0',
+        },
     },
 
     wrapper: {
@@ -19,29 +27,64 @@ const useStyles = makeStyles({
     },
 
     imageContainer: {
+        padding: '1rem',
 
+        '@media(max-width: 600px)': {
+            padding: '0',
+            textAlign: 'center',
+            margin: 'auto',
+        },
+
+        '@media(min-width: 600px) and (max-width: 900px)': {
+            padding: '.5em',
+        },
     },
 
     image: {
 
         width: '100%',
         height: '100%',
-        objectFit: 'cover',
+        objectFit: 'contain',
     },
 
     textContainer: {
-        padding: '0 1rem',
+        padding: '1rem',
+
+        '@media(max-width: 600px)': {
+            textAlign: 'center',
+            padding: '1em 0',
+        },
+
+        '@media(min-width: 600px) and (max-width: 900px)': {
+            padding: '0.5em',
+        },
     },
 
     header: {
-        fontFamily: 'gothic-bold',
+        fontFamily: 'source-bold',
         color: '#673376',
+        letterSpacing: '1px',
+
+        '@media(max-width: 600px)': {
+            fontSize: '2.5em',
+            lineHeight: '150%',
+        },
+
+        '@media(min-width: 600px) and (max-width: 900px)': {
+            fontSize: '2em',
+        },
     },
 
     description: {
-        margin: '2.5rem 0',
+        margin: '3rem 0',
         color: '#808080',
-        fontFamily: 'gothic-regular',
+        fontFamily: 'source-regular',
+        letterSpacing: '1px',
+
+        '@media(min-width: 600px) and (max-width: 900px)': {
+            margin: '2rem 0',
+            fontSize: '.8em',
+        },
     },
 
     buttonContainer: {
@@ -49,19 +92,29 @@ const useStyles = makeStyles({
     },
 
     buyButton: {
-        fontFamily: 'gothic-semi',
+        fontFamily: 'source-semi',
         backgroundColor: '#6617cb',
         backgroundImage: 'linear-gradient(315deg, #6617cb 0%, #cb218e 74%)',
         color: '#fcfcfc',
         textTransform: 'none',
+        letterSpacing: '1px',
+
+        '@media(min-width: 600px) and (max-width: 900px)': {
+            fontSize: '.7em',
+        },
     },
 
     learnButton: {
         color: '#8D579C',
-        fontFamily: 'gothic-semi',
+        fontFamily: 'source-semi',
         border: 'none',
         textTransform: 'none',
-        margin: '0 1.5rem'
+        margin: '0 1.5rem',
+        letterSpacing: '1px',
+
+        '@media(min-width: 600px) and (max-width: 900px)': {
+            fontSize: '.7em',
+        },
     },
 });
 

@@ -27,17 +27,27 @@ const useStyles = makeStyles({
     },
 
     logo: {
-        color: '#491257',
-        fontFamily: 'gothic-semi',
+        color: '#673376',
+        fontFamily: 'source-bold',
         letterSpacing: '1px',
+
+        '@media(min-width: 600px) and (max-width: 900px)': {
+            fontSize: '1.2rem',
+        },
     },
 
     address: {
-        fontFamily: 'gothic-regular',
+        fontFamily: 'source-regular',
         color: '#808080',
         margin: '1.5rem 0',
         lineHeight: 2,
         letterSpacing: '1px',
+
+        '@media(min-width: 600px) and (max-width: 900px)': {
+            fontSize: '.7rem',
+            margin: '0',
+            padding: '1rem 0',
+        },
     },
 
     tabContainer: {
@@ -46,8 +56,12 @@ const useStyles = makeStyles({
 
     tabHeader: {
         letterSpacing: '1px',
-        fontFamily: 'gothic-semi',
-        color: '#491257',
+        fontFamily: 'source-semi',
+        color: '#673376',
+
+        '@media(min-width: 600px) and (max-width: 900px)': {
+            fontSize: '1rem',
+        },
     },
 
     linkRemoval: {
@@ -61,8 +75,12 @@ const useStyles = makeStyles({
     tab: {
         color: '#808080',
         margin: '1.5rem 0',
-        fontFamily: 'gothic-regular',
+        fontFamily: 'source-regular',
         letterSpacing: '1px',
+
+        '@media(min-width: 600px) and (max-width: 900px)': {
+            fontSize: '.7rem',
+        },
     },
 
 });
@@ -155,6 +173,12 @@ export default function Footer() {
                         )
                     }
                 </Grid>
+
+                <div style={{ textAlign: 'center', padding: '2rem 0', }}>
+                    <Typography variant='body1' style={{ color: '#808080', }}>
+                        Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
+                    </Typography>
+                </div>
             </div>
         </div >
     )

@@ -7,14 +7,32 @@ import Money from '../../assets/images/money.png';
 const useStyles = makeStyles({
     root: {
         padding: '8rem 0',
+
+        '@media(max-width: 600px)': {
+            padding: '4rem 0'
+        },
+
+        '@media(min-width: 600px) and (max-width: 900px)': {
+            padding: '5rem 0',
+        },
     },
 
     wrapper: {
 
     },
 
-    imageContainer: {
+    gridContainer: {
+        marginBottom: '6rem',
 
+        '@media(max-width: 600px)': {
+
+        },
+    },
+
+    imageContainer: {
+        '@media(max-width: 600px)': {
+            textAlign: 'center',
+        },
     },
 
     image: {
@@ -29,26 +47,59 @@ const useStyles = makeStyles({
     },
 
     textContainer: {
+        '@media(max-width: 600px)': {
+            textAlign: 'center',
+        },
 
     },
 
     header: {
-        fontFamily: 'gothic-bold',
+        fontFamily: 'source-bold',
         color: '#673376',
+        letterSpacing: '1px',
+
+        '@media(max-width: 600px)': {
+            fontSize: '2.5rem',
+            paddingTop: '1rem',
+            lineHeight: '150%',
+        },
+
+        '@media(min-width: 600px) and (max-width: 900px)': {
+            fontSize: '1.6rem',
+        },
     },
 
     description: {
         margin: '2.5rem 0',
         color: '#808080',
-        fontFamily: 'gothic-regular',
+        fontFamily: 'source-regular',
+        letterSpacing: '1px',
+
+        '@media(max-width: 600px)': {
+
+        },
+
+        '@media(min-width: 600px) and (max-width: 900px)': {
+            fontSize: '.7rem',
+            margin: '1.5rem 0',
+        },
     },
 
     button: {
-        fontFamily: 'gothic-semi',
+        fontFamily: 'source-semi',
         backgroundColor: '#6617cb',
         backgroundImage: 'linear-gradient(315deg, #6617cb 0%, #cb218e 74%)',
         color: '#fcfcfc',
         textTransform: 'none',
+        letterSpacing: '1px',
+
+        '@media(max-width: 600px)': {
+
+        },
+
+        '@media(min-width: 600px) and (max-width: 900px)': {
+            fontSize: '.7rem',
+        },
     },
 
 
@@ -68,6 +119,7 @@ export default function SideBySide() {
                     xs={12}
                     sm={12}
                     md={12}
+                    className={classes.gridContainer}
                 >
                     <Grid
                         item
@@ -105,6 +157,7 @@ export default function SideBySide() {
                     xs={12}
                     sm={12}
                     md={12}
+                    className={classes.gridContainer}
                 >
                     <Grid
                         item
